@@ -19,6 +19,12 @@
 
 ---
 
+## 🌐 Live Demo
+
+🚀 **Live Application:** [Open SupplySense](https://supplysense-ai3785.ai.studio)
+
+💻 **GitHub Repository:** [View Source Code](https://github.com/ujjwalawasthi7597-del/supplysense-ai-inventory-management)
+
 ## 📌 Overview
 
 SupplySense is a full-stack inventory and supply chain management application designed to simplify inventory operations and improve business decision-making.
