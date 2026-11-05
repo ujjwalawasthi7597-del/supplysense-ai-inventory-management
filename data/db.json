@@ -1,0 +1,801 @@
+{
+  "users": [
+    {
+      "_id": "usr_admin_1",
+      "name": "Sarah Jenkins",
+      "email": "admin@supplysense.com",
+      "password": "$2b$10$c0XlrHdv1gvMMPQ/35j0OeynSqqy7I7PMOnEMJ0TKadlk/V/WAjTq",
+      "role": "admin",
+      "phone": "+1 (555) 234-5678",
+      "createdAt": "2026-09-05T06:24:37.856Z"
+    },
+    {
+      "_id": "usr_staff_1",
+      "name": "Alex Rivera",
+      "email": "staff@supplysense.com",
+      "password": "$2b$10$O5qBU9LJWMf9o0XGuazScOqWHJhUPIzJevKqEqEQeH2FOuHHeIqqa",
+      "role": "staff",
+      "phone": "+1 (555) 876-5432",
+      "createdAt": "2026-09-20T06:24:37.856Z"
+    }
+  ],
+  "warehouses": [
+    {
+      "_id": "wh_1",
+      "name": "Midwest Central Distribution",
+      "warehouseCode": "WH-CHI-01",
+      "location": "Chicago, IL",
+      "managerName": "David Miller",
+      "contactNumber": "+1 (312) 555-0199",
+      "description": "Primary Midwest distribution center equipped with climate-controlled bays.",
+      "createdAt": "2026-08-06T06:24:37.856Z"
+    },
+    {
+      "_id": "wh_2",
+      "name": "Pacific Logistics Hub",
+      "warehouseCode": "WH-RNO-02",
+      "location": "Reno, NV",
+      "managerName": "Elena Rostova",
+      "contactNumber": "+1 (775) 555-0144",
+      "description": "West coast fulfillment center with high-rack automated storage.",
+      "createdAt": "2026-08-11T06:24:37.856Z"
+    },
+    {
+      "_id": "wh_3",
+      "name": "East Coast Gateway Depot",
+      "warehouseCode": "WH-EWR-03",
+      "location": "Newark, NJ",
+      "managerName": "Marcus Vance",
+      "contactNumber": "+1 (973) 555-0122",
+      "description": "Seaport-adjacent facility handling rapid import and regional distribution.",
+      "createdAt": "2026-08-21T06:24:37.856Z"
+    },
+    {
+      "_id": "wh_4",
+      "name": "Southern Freight Terminal",
+      "warehouseCode": "WH-DFW-04",
+      "location": "Dallas, TX",
+      "managerName": "Rachel Kim",
+      "contactNumber": "+1 (214) 555-0178",
+      "description": "Southwest cross-docking terminal serving Gulf and Central regions.",
+      "createdAt": "2026-09-05T06:24:37.856Z"
+    }
+  ],
+  "suppliers": [
+    {
+      "_id": "sup_1",
+      "name": "Nexus Electronics Corp",
+      "companyName": "Nexus Global Microelectronics",
+      "email": "procurement@nexuselec.com",
+      "phone": "+1 (408) 555-9010",
+      "address": "2400 Technology Dr, San Jose, CA 95110",
+      "paymentTerms": "Net 30",
+      "createdAt": "2026-07-07T06:24:37.856Z"
+    },
+    {
+      "_id": "sup_2",
+      "name": "Apex Industrial Parts Ltd",
+      "companyName": "Apex Precision Technologies",
+      "email": "sales@apexind.com",
+      "phone": "+1 (313) 555-4820",
+      "address": "1500 Assembly Blvd, Detroit, MI 48202",
+      "paymentTerms": "Net 45",
+      "createdAt": "2026-07-17T06:24:37.856Z"
+    },
+    {
+      "_id": "sup_3",
+      "name": "Prime Packaging Solutions",
+      "companyName": "Prime Eco-Pack Materials",
+      "email": "orders@primepack.com",
+      "phone": "+1 (770) 555-3211",
+      "address": "880 Logistics Way, Atlanta, GA 30336",
+      "paymentTerms": "Net 15",
+      "createdAt": "2026-07-22T06:24:37.856Z"
+    },
+    {
+      "_id": "sup_4",
+      "name": "Nordic Sensors & Automation",
+      "companyName": "Nordic Automation Oy",
+      "email": "orders@nordicsensors.io",
+      "phone": "+1 (617) 555-7760",
+      "address": "100 Innovation Sq, Cambridge, MA 02142",
+      "paymentTerms": "Net 30",
+      "createdAt": "2026-08-01T06:24:37.856Z"
+    },
+    {
+      "_id": "sup_5",
+      "name": "Vanguard Power & Batteries",
+      "companyName": "Vanguard Energy Storage Inc",
+      "email": "b2b@vanguardpower.com",
+      "phone": "+1 (512) 555-8390",
+      "address": "4200 Energy Pkwy, Austin, TX 78728",
+      "paymentTerms": "2/10 Net 30",
+      "createdAt": "2026-08-16T06:24:37.856Z"
+    }
+  ],
+  "products": [
+    {
+      "_id": "prod_1",
+      "name": "Smart Commercial Thermostat Pro",
+      "sku": "SKU-THERM-01",
+      "category": "Electronics",
+      "description": "Dual-band Wi-Fi commercial thermostat with Modbus and BACnet support.",
+      "image": "https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?w=500&auto=format&fit=crop&q=80",
+      "purchasePrice": 85,
+      "sellingPrice": 159,
+      "currentStock": 48,
+      "minimumStock": 20,
+      "warehouseId": "wh_1",
+      "supplierId": "sup_1",
+      "createdAt": "2026-09-05T06:24:37.856Z"
+    },
+    {
+      "_id": "prod_2",
+      "name": "Wireless Industrial Barcode Scanner",
+      "sku": "SKU-SCAN-02",
+      "category": "Hardware",
+      "description": "Rugged IP65 2D QR and barcode scanner with Bluetooth base station.",
+      "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=500&auto=format&fit=crop&q=80",
+      "purchasePrice": 120,
+      "sellingPrice": 229,
+      "currentStock": 14,
+      "minimumStock": 25,
+      "warehouseId": "wh_1",
+      "supplierId": "sup_1",
+      "createdAt": "2026-09-10T06:24:37.856Z"
+    },
+    {
+      "_id": "prod_3",
+      "name": "Heavy-Duty 48x40 Shipping Pallet",
+      "sku": "SKU-PALL-03",
+      "category": "Logistics Supplies",
+      "description": "Heat-treated ISPM-15 compliant hardwood export shipping pallets.",
+      "image": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=500&auto=format&fit=crop&q=80",
+      "purchasePrice": 16.5,
+      "sellingPrice": 34,
+      "currentStock": 180,
+      "minimumStock": 50,
+      "warehouseId": "wh_2",
+      "supplierId": "sup_3",
+      "createdAt": "2026-09-15T06:24:37.856Z"
+    },
+    {
+      "_id": "prod_4",
+      "name": "Industrial IoT Vibration Sensor",
+      "sku": "SKU-SENS-04",
+      "category": "Sensors",
+      "description": "Tri-axial wireless machine vibration and temperature predictive sensor.",
+      "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=500&auto=format&fit=crop&q=80",
+      "purchasePrice": 65,
+      "sellingPrice": 135,
+      "currentStock": 5,
+      "minimumStock": 15,
+      "warehouseId": "wh_3",
+      "supplierId": "sup_4",
+      "createdAt": "2026-09-20T06:24:37.856Z"
+    },
+    {
+      "_id": "prod_5",
+      "name": "48V 100Ah Lithium Iron Phosphate Battery",
+      "sku": "SKU-BATT-05",
+      "category": "Power Systems",
+      "description": "LiFePO4 modular rack-mountable energy storage unit with smart BMS.",
+      "image": "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=500&auto=format&fit=crop&q=80",
+      "purchasePrice": 750,
+      "sellingPrice": 1290,
+      "currentStock": 8,
+      "minimumStock": 10,
+      "warehouseId": "wh_4",
+      "supplierId": "sup_5",
+      "createdAt": "2026-09-25T06:24:37.856Z"
+    },
+    {
+      "_id": "prod_6",
+      "name": "Direct Thermal Shipping Label Roll (4x6)",
+      "sku": "SKU-LBL-06",
+      "category": "Logistics Supplies",
+      "description": "Pack of 12 rolls, 500 labels per roll, smudge-resistant adhesive.",
+      "image": "https://images.unsplash.com/photo-1595079676339-1534801ad6cf?w=500&auto=format&fit=crop&q=80",
+      "purchasePrice": 22,
+      "sellingPrice": 48,
+      "currentStock": 220,
+      "minimumStock": 40,
+      "warehouseId": "wh_1",
+      "supplierId": "sup_3",
+      "createdAt": "2026-09-27T06:24:37.856Z"
+    },
+    {
+      "_id": "prod_7",
+      "name": "USB-C Universal Quad 4K Docking Station",
+      "sku": "SKU-DOCK-07",
+      "category": "Electronics",
+      "description": "100W Power Delivery, dual HDMI, dual DP, 2.5GbE Ethernet workstation dock.",
+      "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=500&auto=format&fit=crop&q=80",
+      "purchasePrice": 95,
+      "sellingPrice": 189,
+      "currentStock": 32,
+      "minimumStock": 15,
+      "warehouseId": "wh_2",
+      "supplierId": "sup_1",
+      "createdAt": "2026-09-30T06:24:37.856Z"
+    },
+    {
+      "_id": "prod_8",
+      "name": "Hydraulic Pallet Jack 5500 lbs",
+      "sku": "SKU-JACK-08",
+      "category": "Hardware",
+      "description": "Heavy duty polyurethane load wheels, reinforced ergonomic 3-position lever.",
+      "image": "https://images.unsplash.com/photo-1586528116493-a029325540fa?w=500&auto=format&fit=crop&q=80",
+      "purchasePrice": 240,
+      "sellingPrice": 450,
+      "currentStock": 0,
+      "minimumStock": 4,
+      "warehouseId": "wh_4",
+      "supplierId": "sup_2",
+      "createdAt": "2026-10-03T06:24:37.856Z"
+    },
+    {
+      "_id": "prod_9",
+      "name": "UHF RFID Adhesive Tracking Tags (Pack of 500)",
+      "sku": "SKU-RFID-09",
+      "category": "Sensors",
+      "description": "Monza R6 chip EPC Gen 2 compliant high-speed inventory tracking tags.",
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&auto=format&fit=crop&q=80",
+      "purchasePrice": 45,
+      "sellingPrice": 95,
+      "currentStock": 75,
+      "minimumStock": 25,
+      "warehouseId": "wh_3",
+      "supplierId": "sup_4",
+      "createdAt": "2026-10-05T06:24:37.856Z"
+    },
+    {
+      "_id": "prod_10",
+      "name": "High-Torque Industrial Stepper Motor",
+      "sku": "SKU-MTR-10",
+      "category": "Hardware",
+      "description": "NEMA 34 high precision bipolar stepper motor for CNC and conveyor feeds.",
+      "image": "https://images.unsplash.com/photo-1581092335397-9583fe92d232?w=500&auto=format&fit=crop&q=80",
+      "purchasePrice": 72,
+      "sellingPrice": 145,
+      "currentStock": 28,
+      "minimumStock": 12,
+      "warehouseId": "wh_2",
+      "supplierId": "sup_2",
+      "createdAt": "2026-10-10T06:24:37.856Z"
+    },
+    {
+      "_id": "prod_11",
+      "name": "Poly Bubble Mailers #5 (Box of 200)",
+      "sku": "SKU-MAIL-11",
+      "category": "Logistics Supplies",
+      "description": "Tear-proof waterproof cushioned shipping mailers with tamper-evident seal.",
+      "image": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=500&auto=format&fit=crop&q=80",
+      "purchasePrice": 38,
+      "sellingPrice": 79,
+      "currentStock": 95,
+      "minimumStock": 30,
+      "warehouseId": "wh_1",
+      "supplierId": "sup_3",
+      "createdAt": "2026-10-13T06:24:37.856Z"
+    },
+    {
+      "_id": "prod_12",
+      "name": "24V DC Switching Power Supply 480W",
+      "sku": "SKU-PWR-12",
+      "category": "Power Systems",
+      "description": "DIN-rail mounted industrial SMPS with overload and surge protection.",
+      "image": "https://images.unsplash.com/photo-1555680202-c86f0e12f086?w=500&auto=format&fit=crop&q=80",
+      "purchasePrice": 58,
+      "sellingPrice": 119,
+      "currentStock": 3,
+      "minimumStock": 10,
+      "warehouseId": "wh_3",
+      "supplierId": "sup_5",
+      "createdAt": "2026-10-15T06:24:37.856Z"
+    }
+  ],
+  "stockMovements": [
+    {
+      "_id": "mv_1",
+      "productId": "prod_1",
+      "warehouseId": "wh_1",
+      "movementType": "Stock In",
+      "quantity": 50,
+      "reason": "Initial intake from PO-2026-001",
+      "performedBy": "Sarah Jenkins",
+      "createdAt": "2026-10-07T06:24:37.856Z"
+    },
+    {
+      "_id": "mv_2",
+      "productId": "prod_2",
+      "warehouseId": "wh_1",
+      "movementType": "Stock In",
+      "quantity": 25,
+      "reason": "Shipment received from Nexus Electronics",
+      "performedBy": "Alex Rivera",
+      "createdAt": "2026-10-09T06:24:37.856Z"
+    },
+    {
+      "_id": "mv_3",
+      "productId": "prod_2",
+      "warehouseId": "wh_1",
+      "movementType": "Stock Out",
+      "quantity": 11,
+      "reason": "Sale order fulfilled: SO-2026-102",
+      "performedBy": "Alex Rivera",
+      "createdAt": "2026-10-23T06:24:37.856Z"
+    },
+    {
+      "_id": "mv_4",
+      "productId": "prod_3",
+      "warehouseId": "wh_2",
+      "movementType": "Stock In",
+      "quantity": 200,
+      "reason": "Bulk delivery PO-2026-002",
+      "performedBy": "David Miller",
+      "createdAt": "2026-10-15T06:24:37.856Z"
+    },
+    {
+      "_id": "mv_5",
+      "productId": "prod_4",
+      "warehouseId": "wh_3",
+      "movementType": "Adjustment",
+      "quantity": -3,
+      "reason": "Quality inspection found damaged packaging",
+      "performedBy": "Sarah Jenkins",
+      "createdAt": "2026-10-20T06:24:37.856Z"
+    },
+    {
+      "_id": "mv_6",
+      "productId": "prod_5",
+      "warehouseId": "wh_4",
+      "movementType": "Stock In",
+      "quantity": 12,
+      "reason": "Direct freight delivery from Vanguard Power",
+      "performedBy": "Rachel Kim",
+      "createdAt": "2026-10-21T06:24:37.856Z"
+    },
+    {
+      "_id": "mv_7",
+      "productId": "prod_5",
+      "warehouseId": "wh_4",
+      "movementType": "Stock Out",
+      "quantity": 4,
+      "reason": "Solar installation client order fulfilled",
+      "performedBy": "Alex Rivera",
+      "createdAt": "2026-10-30T06:24:37.856Z"
+    },
+    {
+      "_id": "mv_8",
+      "productId": "prod_8",
+      "warehouseId": "wh_4",
+      "movementType": "Stock Out",
+      "quantity": 5,
+      "reason": "Warehouse transfer and client sales zeroed stock",
+      "performedBy": "Sarah Jenkins",
+      "createdAt": "2026-11-01T06:24:37.856Z"
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "_id": "po_1",
+      "poNumber": "PO-2026-1001",
+      "supplierId": "sup_1",
+      "warehouseId": "wh_1",
+      "products": [
+        {
+          "productId": "prod_1",
+          "productName": "Smart Commercial Thermostat Pro",
+          "quantity": 30,
+          "unitPrice": 85,
+          "total": 2550
+        },
+        {
+          "productId": "prod_2",
+          "productName": "Wireless Industrial Barcode Scanner",
+          "quantity": 20,
+          "unitPrice": 120,
+          "total": 2400
+        }
+      ],
+      "totalAmount": 4950,
+      "orderDate": "2026-10-05T06:24:37.856Z",
+      "expectedDeliveryDate": "2026-10-19T06:24:37.856Z",
+      "actualDeliveryDate": "2026-10-21T06:24:37.856Z",
+      "status": "Received",
+      "createdBy": "Sarah Jenkins",
+      "approvedBy": "Sarah Jenkins",
+      "notes": "Delivered in excellent condition ahead of schedule.",
+      "createdAt": "2026-10-05T06:24:37.856Z"
+    },
+    {
+      "_id": "po_2",
+      "poNumber": "PO-2026-1002",
+      "supplierId": "sup_3",
+      "warehouseId": "wh_1",
+      "products": [
+        {
+          "productId": "prod_6",
+          "productName": "Direct Thermal Shipping Label Roll (4x6)",
+          "quantity": 100,
+          "unitPrice": 22,
+          "total": 2200
+        },
+        {
+          "productId": "prod_11",
+          "productName": "Poly Bubble Mailers #5 (Box of 200)",
+          "quantity": 50,
+          "unitPrice": 38,
+          "total": 1900
+        }
+      ],
+      "totalAmount": 4100,
+      "orderDate": "2026-10-13T06:24:37.856Z",
+      "expectedDeliveryDate": "2026-10-23T06:24:37.856Z",
+      "actualDeliveryDate": "2026-10-25T06:24:37.856Z",
+      "status": "Received",
+      "createdBy": "Alex Rivera",
+      "approvedBy": "Sarah Jenkins",
+      "notes": "Packaging restock received and shelved in Bay A4.",
+      "createdAt": "2026-10-13T06:24:37.856Z"
+    },
+    {
+      "_id": "po_3",
+      "poNumber": "PO-2026-1003",
+      "supplierId": "sup_2",
+      "warehouseId": "wh_4",
+      "products": [
+        {
+          "productId": "prod_8",
+          "productName": "Hydraulic Pallet Jack 5500 lbs",
+          "quantity": 6,
+          "unitPrice": 240,
+          "total": 1440
+        }
+      ],
+      "totalAmount": 1440,
+      "orderDate": "2026-10-17T06:24:37.856Z",
+      "expectedDeliveryDate": "2026-10-31T06:24:37.856Z",
+      "status": "Ordered",
+      "createdBy": "Alex Rivera",
+      "approvedBy": "Sarah Jenkins",
+      "notes": "Supplier shipment delayed due to axle component backorder.",
+      "createdAt": "2026-10-17T06:24:37.856Z"
+    },
+    {
+      "_id": "po_4",
+      "poNumber": "PO-2026-1004",
+      "supplierId": "sup_4",
+      "warehouseId": "wh_3",
+      "products": [
+        {
+          "productId": "prod_4",
+          "productName": "Industrial IoT Vibration Sensor",
+          "quantity": 25,
+          "unitPrice": 65,
+          "total": 1625
+        },
+        {
+          "productId": "prod_9",
+          "productName": "UHF RFID Adhesive Tracking Tags (Pack of 500)",
+          "quantity": 40,
+          "unitPrice": 45,
+          "total": 1800
+        }
+      ],
+      "totalAmount": 3425,
+      "orderDate": "2026-10-27T06:24:37.856Z",
+      "expectedDeliveryDate": "2026-11-09T06:24:37.856Z",
+      "status": "Approved",
+      "createdBy": "Alex Rivera",
+      "approvedBy": "Sarah Jenkins",
+      "notes": "Sensors restock approved; supplier confirmed production slot.",
+      "createdAt": "2026-10-27T06:24:37.856Z"
+    },
+    {
+      "_id": "po_5",
+      "poNumber": "PO-2026-1005",
+      "supplierId": "sup_5",
+      "warehouseId": "wh_4",
+      "products": [
+        {
+          "productId": "prod_5",
+          "productName": "48V 100Ah Lithium Iron Phosphate Battery",
+          "quantity": 10,
+          "unitPrice": 750,
+          "total": 7500
+        }
+      ],
+      "totalAmount": 7500,
+      "orderDate": "2026-11-02T06:24:37.856Z",
+      "expectedDeliveryDate": "2026-11-14T06:24:37.856Z",
+      "status": "Pending Approval",
+      "createdBy": "Alex Rivera",
+      "notes": "Staff requested urgent battery restock for new enterprise client.",
+      "createdAt": "2026-11-02T06:24:37.856Z"
+    },
+    {
+      "_id": "po_6",
+      "poNumber": "PO-2026-1006",
+      "supplierId": "sup_1",
+      "warehouseId": "wh_2",
+      "products": [
+        {
+          "productId": "prod_7",
+          "productName": "USB-C Universal Quad 4K Docking Station",
+          "quantity": 30,
+          "unitPrice": 95,
+          "total": 2850
+        }
+      ],
+      "totalAmount": 2850,
+      "orderDate": "2026-11-03T06:24:37.856Z",
+      "expectedDeliveryDate": "2026-11-12T06:24:37.856Z",
+      "status": "Draft",
+      "createdBy": "Sarah Jenkins",
+      "notes": "Draft order being prepared for Q4 replenishment.",
+      "createdAt": "2026-11-03T06:24:37.856Z"
+    }
+  ],
+  "sales": [
+    {
+      "_id": "sale_1",
+      "saleNumber": "SO-2026-081",
+      "customerName": "Metro Transit Authorities",
+      "products": [
+        {
+          "productId": "prod_1",
+          "productName": "Smart Commercial Thermostat Pro",
+          "quantity": 6,
+          "unitPrice": 159,
+          "total": 954
+        },
+        {
+          "productId": "prod_4",
+          "productName": "Industrial IoT Vibration Sensor",
+          "quantity": 8,
+          "unitPrice": 135,
+          "total": 1080
+        }
+      ],
+      "totalAmount": 2034,
+      "saleDate": "2026-10-07T06:24:37.856Z",
+      "createdBy": "Sarah Jenkins",
+      "notes": "Depot automation upgrade phase 1.",
+      "createdAt": "2026-10-07T06:24:37.856Z"
+    },
+    {
+      "_id": "sale_2",
+      "saleNumber": "SO-2026-082",
+      "customerName": "Pioneer Logistics LLC",
+      "products": [
+        {
+          "productId": "prod_2",
+          "productName": "Wireless Industrial Barcode Scanner",
+          "quantity": 5,
+          "unitPrice": 229,
+          "total": 1145
+        },
+        {
+          "productId": "prod_6",
+          "productName": "Direct Thermal Shipping Label Roll (4x6)",
+          "quantity": 20,
+          "unitPrice": 48,
+          "total": 960
+        }
+      ],
+      "totalAmount": 2105,
+      "saleDate": "2026-10-10T06:24:37.856Z",
+      "createdBy": "Alex Rivera",
+      "notes": "New sorting facility outfitting.",
+      "createdAt": "2026-10-10T06:24:37.856Z"
+    },
+    {
+      "_id": "sale_3",
+      "saleNumber": "SO-2026-083",
+      "customerName": "AeroTech Systems Inc",
+      "products": [
+        {
+          "productId": "prod_5",
+          "productName": "48V 100Ah Lithium Iron Phosphate Battery",
+          "quantity": 2,
+          "unitPrice": 1290,
+          "total": 2580
+        },
+        {
+          "productId": "prod_12",
+          "productName": "24V DC Switching Power Supply 480W",
+          "quantity": 4,
+          "unitPrice": 119,
+          "total": 476
+        }
+      ],
+      "totalAmount": 3056,
+      "saleDate": "2026-10-13T06:24:37.856Z",
+      "createdBy": "Sarah Jenkins",
+      "notes": "Hangar backup power array.",
+      "createdAt": "2026-10-13T06:24:37.856Z"
+    },
+    {
+      "_id": "sale_4",
+      "saleNumber": "SO-2026-084",
+      "customerName": "Swift Fulfillment Hub",
+      "products": [
+        {
+          "productId": "prod_3",
+          "productName": "Heavy-Duty 48x40 Shipping Pallet",
+          "quantity": 40,
+          "unitPrice": 34,
+          "total": 1360
+        },
+        {
+          "productId": "prod_11",
+          "productName": "Poly Bubble Mailers #5 (Box of 200)",
+          "quantity": 15,
+          "unitPrice": 79,
+          "total": 1185
+        }
+      ],
+      "totalAmount": 2545,
+      "saleDate": "2026-10-16T06:24:37.856Z",
+      "createdBy": "Alex Rivera",
+      "notes": "Bi-weekly packaging supply contract.",
+      "createdAt": "2026-10-16T06:24:37.856Z"
+    },
+    {
+      "_id": "sale_5",
+      "saleNumber": "SO-2026-085",
+      "customerName": "CloudScale Data Centers",
+      "products": [
+        {
+          "productId": "prod_7",
+          "productName": "USB-C Universal Quad 4K Docking Station",
+          "quantity": 12,
+          "unitPrice": 189,
+          "total": 2268
+        }
+      ],
+      "totalAmount": 2268,
+      "saleDate": "2026-10-19T06:24:37.856Z",
+      "createdBy": "Sarah Jenkins",
+      "notes": "Engineering team desk rollout.",
+      "createdAt": "2026-10-19T06:24:37.856Z"
+    },
+    {
+      "_id": "sale_6",
+      "saleNumber": "SO-2026-086",
+      "customerName": "Titan Manufacturing Corp",
+      "products": [
+        {
+          "productId": "prod_10",
+          "productName": "High-Torque Industrial Stepper Motor",
+          "quantity": 8,
+          "unitPrice": 145,
+          "total": 1160
+        },
+        {
+          "productId": "prod_4",
+          "productName": "Industrial IoT Vibration Sensor",
+          "quantity": 4,
+          "unitPrice": 135,
+          "total": 540
+        }
+      ],
+      "totalAmount": 1700,
+      "saleDate": "2026-10-23T06:24:37.856Z",
+      "createdBy": "Alex Rivera",
+      "notes": "Assembly line motor replacement.",
+      "createdAt": "2026-10-23T06:24:37.856Z"
+    },
+    {
+      "_id": "sale_7",
+      "saleNumber": "SO-2026-087",
+      "customerName": "BlueSky Logistics",
+      "products": [
+        {
+          "productId": "prod_2",
+          "productName": "Wireless Industrial Barcode Scanner",
+          "quantity": 6,
+          "unitPrice": 229,
+          "total": 1374
+        },
+        {
+          "productId": "prod_9",
+          "productName": "UHF RFID Adhesive Tracking Tags (Pack of 500)",
+          "quantity": 10,
+          "unitPrice": 95,
+          "total": 950
+        }
+      ],
+      "totalAmount": 2324,
+      "saleDate": "2026-10-27T06:24:37.856Z",
+      "createdBy": "Sarah Jenkins",
+      "notes": "Handheld scanner upgrade across dock.",
+      "createdAt": "2026-10-27T06:24:37.856Z"
+    },
+    {
+      "_id": "sale_8",
+      "saleNumber": "SO-2026-088",
+      "customerName": "Solaria Microgrids",
+      "products": [
+        {
+          "productId": "prod_5",
+          "productName": "48V 100Ah Lithium Iron Phosphate Battery",
+          "quantity": 2,
+          "unitPrice": 1290,
+          "total": 2580
+        }
+      ],
+      "totalAmount": 2580,
+      "saleDate": "2026-10-31T06:24:37.856Z",
+      "createdBy": "Alex Rivera",
+      "notes": "Off-grid agricultural pump installation.",
+      "createdAt": "2026-10-31T06:24:37.856Z"
+    },
+    {
+      "_id": "sale_9",
+      "saleNumber": "SO-2026-089",
+      "customerName": "Omni Retailers Group",
+      "products": [
+        {
+          "productId": "prod_1",
+          "productName": "Smart Commercial Thermostat Pro",
+          "quantity": 4,
+          "unitPrice": 159,
+          "total": 636
+        },
+        {
+          "productId": "prod_6",
+          "productName": "Direct Thermal Shipping Label Roll (4x6)",
+          "quantity": 15,
+          "unitPrice": 48,
+          "total": 720
+        }
+      ],
+      "totalAmount": 1356,
+      "saleDate": "2026-11-03T06:24:37.856Z",
+      "createdBy": "Sarah Jenkins",
+      "notes": "Storefront retrofits.",
+      "createdAt": "2026-11-03T06:24:37.856Z"
+    }
+  ],
+  "notifications": [
+    {
+      "_id": "notif_1",
+      "title": "Critical Out-of-Stock Alert",
+      "message": "Hydraulic Pallet Jack 5500 lbs (SKU-JACK-08) is at 0 units in Southern Freight Terminal.",
+      "type": "out_of_stock",
+      "isRead": false,
+      "link": "/products",
+      "createdAt": "2026-11-03T06:24:37.856Z"
+    },
+    {
+      "_id": "notif_2",
+      "title": "Pending Purchase Order Approval",
+      "message": "Alex Rivera submitted PO-2026-1005 ($7,500.00 for Lithium Batteries) awaiting admin approval.",
+      "type": "po_approval",
+      "isRead": false,
+      "link": "/purchase-orders",
+      "createdAt": "2026-11-02T06:24:37.856Z"
+    },
+    {
+      "_id": "notif_3",
+      "title": "Supplier Delivery Delayed",
+      "message": "PO-2026-1003 from Apex Industrial Parts Ltd is overdue by 4 days.",
+      "type": "po_delayed",
+      "isRead": false,
+      "link": "/purchase-orders",
+      "createdAt": "2026-11-01T06:24:37.856Z"
+    },
+    {
+      "_id": "notif_4",
+      "title": "Low Stock Warning",
+      "message": "Industrial IoT Vibration Sensor (SKU-SENS-04) has only 5 units remaining (min 15).",
+      "type": "low_stock",
+      "isRead": true,
+      "link": "/products",
+      "createdAt": "2026-10-31T06:24:37.856Z"
+    }
+  ]
+}

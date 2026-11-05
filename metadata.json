@@ -1,0 +1,6 @@
+{
+  "name": "SupplySense – AI Inventory & Supply Chain Management",
+  "description": "Smart inventory, warehouse, supplier, purchase order, stock movement, and sales management platform with AI-powered forecasting and demand intelligence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
